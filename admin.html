@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>管理画面</h1>
+
+<div id="login">
+
+<input
+type="password"
+id="password"
+placeholder="パスワード">
+
+<button onclick="login()">
+ログイン
+</button>
+
+</div>
+
+<div id="adminArea" style="display:none">
+
+<h2>予約状況</h2>
+
+<div id="adminTable"></div>
+
+</div>
+
+</div>
+
+<script src="js/admin.js"></script>
+
+</body>
+</html>
