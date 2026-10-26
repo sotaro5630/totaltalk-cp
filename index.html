@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html lang="ja">
+ 
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport"
+content="width=device-width,initial-scale=1">
+ 
 <title>ツアー予約</title>
-
-<link rel="stylesheet" href="css/style.css">
+ 
+<link rel="stylesheet"
+href="css/style.css">
+ 
 </head>
-
+ 
 <body>
-
+ 
 <div class="container">
-
-<h1>🎉 ツアー予約サイト 🎉</h1>
-
-<div class="card">
-
-<label>お名前</label>
-<input id="name">
-
-<label>人数</label>
-<input id="people" type="number" min="1" max="15">
-
-</div>
-
-<h2>ツアー一覧</h2>
-
+ 
+<h1>🎉 ツアー予約 🎉</h1>
+ 
+<input
+id="name"
+placeholder="名前">
+ 
+<input
+id="people"
+type="number"
+min="1"
+max="15"
+placeholder="人数">
+ 
+<select id="tourSelect">
+ 
+</select>
+ 
 <div id="tourTable"></div>
-
+ 
+<button
+class="reserveBtn"
+onclick="reserve()">
+ 
+予約送信
+ 
+</button>
+ 
 <div id="result"></div>
-
-<a href="admin.html">
-管理者ページ
-</a>
-
+ 
 </div>
-
+ 
 <script src="js/app.js"></script>
-
+ 
 </body>
 </html>
